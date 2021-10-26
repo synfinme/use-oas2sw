@@ -6,6 +6,6 @@ jobs:
     name: A job to run custom action
     steps:
       - name: Run custom action
-        uses: synfinme/oas2sw@v0.1
+        uses: synfinme/oas2sw@v0.2
         with:
           cmdline: '-h'
