@@ -1,0 +1,11 @@
+name: Manual
+on: workflow_dispatch
+jobs:
+  hello_oas2sw_job:
+    runs-on: ubuntu-latest
+    name: A job to run custom action
+    steps:
+      - name: Run custom action
+        uses: synfinme/oas2sw@v0.1
+        with:
+          cmdline: '-h'
