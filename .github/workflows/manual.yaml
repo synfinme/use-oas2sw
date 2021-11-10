@@ -15,3 +15,11 @@ jobs:
         uses: synfinme/oas2sw@v0.2
         with:
           cmdline: ${{ github.event.inputs.cmdline }}
+  hello_oas2sw_job2:
+    runs-on: ubuntu-latest
+    name: A job to run custom action (again)
+    steps:
+      - name: Run custom action
+        uses: synfinme/oas2sw@v0.2
+        with:
+          cmdline: ${{ github.event.inputs.cmdline }}
